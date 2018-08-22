@@ -1,4 +1,4 @@
-storm-docker
+jike-storm-docker
 ============
 
 Dockerfiles for building a storm cluster. Inspired by [https://github.com/ptgoetz/storm-vagrant](https://github.com/ptgoetz/storm-vagrant)

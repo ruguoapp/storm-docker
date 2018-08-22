@@ -1,5 +1,5 @@
-FROM wurstmeister/storm:0.9.4
-MAINTAINER Wurstmeister
+FROM 804775010343.dkr.ecr.cn-north-1.amazonaws.com.cn/storm:master-28c80c8
+MAINTAINER jikeapp
 
 EXPOSE 6700
 EXPOSE 6701
