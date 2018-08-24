@@ -1,4 +1,4 @@
-FROM 804775010343.dkr.ecr.cn-north-1.amazonaws.com.cn/base:master-28c80c8
+FROM 804775010343.dkr.ecr.cn-north-1.amazonaws.com.cn/base:master-795f11e
 MAINTAINER jikeapp
 
 RUN wget -q -O - https://archive.apache.org/dist/storm/apache-storm-0.9.7/apache-storm-0.9.7.tar.gz | tar -xzf - -C /opt
