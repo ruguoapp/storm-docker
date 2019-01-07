@@ -7,10 +7,14 @@ EXPOSE 6702
 EXPOSE 6703
 EXPOSE 8000
 
+ADD newrelic.jar /opt/newrelic.jar
+ADD newrelic.yml /opt/newrelic.yml
+ADD add_newrelic.sh /usr/bin/add_newrelic.sh
+CMD /usr/bin/add_newrelic.sh
+
 RUN /usr/bin/config-supervisord.sh supervisor
 RUN /usr/bin/config-supervisord.sh logviewer
 CMD /usr/bin/start-supervisor.sh
-
 
 
 

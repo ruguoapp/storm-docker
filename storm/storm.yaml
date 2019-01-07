@@ -5,4 +5,5 @@ drpc.servers:
   - "%nimbus%"
 drpc.port: 3772
 drpc.invocations.port: 3773
-worker.childopts: "-javaagent:%storm%/newrelic/newrelic.jar -Dnewrelic.environment=LOCAL_TEST"
+worker.childopts:
+  - "-javaagent:%storm%/newrelic/newrelic.jar -Dnewrelic.environment=LOCAL_TEST"
