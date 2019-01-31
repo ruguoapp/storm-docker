@@ -1,3 +1,4 @@
+ARG version
 FROM 804775010343.dkr.ecr.cn-north-1.amazonaws.com.cn/base:$version
 MAINTAINER jikeapp
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=1.0
+version=1.1
 
 docker build --build-arg version=${version} -t="804775010343.dkr.ecr.cn-north-1.amazonaws.com.cn/base:${version}" base
 docker build --build-arg version=${version} -t="804775010343.dkr.ecr.cn-north-1.amazonaws.com.cn/storm:${version}" storm
