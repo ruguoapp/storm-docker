@@ -10,9 +10,9 @@ EXPOSE 8000
 
 ADD newrelic.jar /opt/newrelic.jar
 ADD newrelic.yml /opt/newrelic.yml
-ADD add_newrelic.sh /usr/bin/add_newrelic.sh
-RUN chmod 777 /usr/bin/add_newrelic.sh
-CMD /usr/bin/add_newrelic.sh
+ADD add_newrelic.sh /opt/add_newrelic.sh
+RUN chmod 777 /opt/add_newrelic.sh
+RUN sh /opt/add_newrelic.sh
 
 RUN chmod 777 /usr/bin/config-supervisord.sh
 RUN /usr/bin/config-supervisord.sh supervisor
